@@ -315,7 +315,7 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
       mb={4}
     />
     <Text fontSize="xl" fontWeight="bold" color="teal.600">
-      02Auth
+    0Auth2
     </Text>
     <Text mt={2} fontSize="sm" color="gray.500">
       Membuat Google 0Auth2 Sebagai Authentikasi User Menggunakan Express.js
