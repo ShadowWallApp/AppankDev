@@ -318,7 +318,7 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
       02Auth
     </Text>
     <Text mt={2} fontSize="sm" color="gray.500">
-      Membuat Google 02Auth Sebagai Authentikasi User Menggunakn Express.js
+      Membuat Google 0Auth2 Sebagai Authentikasi User Menggunakan Express.js
     </Text>
   </Box>
 
@@ -342,7 +342,7 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
       Firebase
     </Text>
     <Text mt={2} fontSize="sm" color="gray.500">
-      Membuat Firebase Sebagai Authentikasi User Atau sebagai Reltime Database Menggunakn Express.js
+      Membuat Firebase Sebagai Authentikasi User Atau sebagai Reltime Database Menggunakan Express.js
     </Text>
   </Box>
   {/* Item 3 */}
@@ -365,7 +365,7 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
       Mysql
     </Text>
     <Text mt={2} fontSize="sm" color="gray.500">
-      Membuat CRUD Sebagai Database atau Authentikasi Menggunakn Express.js
+      Membuat CRUD Sebagai Database atau Authentikasi Menggunakan Express.js
     </Text>
   </Box>
 
