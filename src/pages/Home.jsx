@@ -223,7 +223,7 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
           <Flex align="center" position="relative" pl={{ base: 6, md: 8 }}>
             <Circle size={{ base: "12px", md: "16px" }} bg="teal.500" position="absolute" left={{ base: "-18px", md: "-28px" }} />
             <Box pl={4}>
-              <Text fontWeight="bold" fontSize={{ base: "md", md: "lg" }} color="teal.600">2022-2024 - Google Play Console</Text>
+              <Text fontWeight="bold" fontSize={{ base: "md", md: "lg" }} color="teal.600">2021-2024 - Google Play Console</Text>
               <Text fontSize="sm" color="gray.600">Android Developer - Freelance</Text>
             </Box>
           </Flex>
