@@ -249,7 +249,7 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
     Our Services
   </Text>
 
-  <SimpleGrid columns={{ base: 3, md: 8 }} spacing={6}>
+  <SimpleGrid columns={{ base: 3, md: 9 }} spacing={6}>
     {/* Item 1 */}
     <Box textAlign="center">
       <Image src="https://raw.githubusercontent.com/dheereshagrwal/coloured-icons/ef59ea8e2bba5848a8f471f94b24f55289c86476/public/logos/technology/react/react.svg" alt="React" boxSize="80px" mx="auto" />
@@ -264,8 +264,8 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
 
     {/* Item 3 */}
     <Box textAlign="center">
-      <Image src="https://raw.githubusercontent.com/dheereshagrwal/coloured-icons/ef59ea8e2bba5848a8f471f94b24f55289c86476/public/logos/technology/nodejs/nodejs.svg" alt="Express.js" boxSize="80px" mx="auto" />
-      <Text mt={4} fontWeight="bold" color="gray.600">Express.js</Text>
+      <Image src="https://raw.githubusercontent.com/dheereshagrwal/coloured-icons/ef59ea8e2bba5848a8f471f94b24f55289c86476/public/logos/technology/expressjs/expressjs.svg" alt="Express.js" boxSize="80px" mx="auto" />
+      <Text mt={4} fontWeight="bold" color="gray.600">Express</Text>
     </Box>
 
     {/* Item 4 */}
@@ -294,6 +294,11 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
     <Box textAlign="center">
       <Image src="https://raw.githubusercontent.com/dheereshagrwal/coloured-icons/ef59ea8e2bba5848a8f471f94b24f55289c86476/public/logos/technology/mysql/mysql-vertical.svg" alt="Mysql" boxSize="80px" mx="auto" />
       <Text mt={4} fontWeight="bold" color="gray.600">Mysql</Text>
+    </Box>
+    {/* Item 8 */}
+    <Box textAlign="center">
+      <Image src="https://raw.githubusercontent.com/dheereshagrwal/coloured-icons/ef59ea8e2bba5848a8f471f94b24f55289c86476/public/logos/technology/mongodb/mongodb2.svg" alt="MongiDB" boxSize="80px" mx="auto" />
+      <Text mt={4} fontWeight="bold" color="gray.600">MongoDB</Text>
     </Box>
   </SimpleGrid>
   <Box height="40px" />
@@ -342,7 +347,7 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
       Firebase
     </Text>
     <Text mt={2} fontSize="sm" color="gray.500">
-      Membuat Firebase Sebagai Authentikasi User Atau sebagai Reltime Database Menggunakan Express.js
+      Membuat Firebase Sebagai Authentikasi User Atau sebagai Reltime Database
     </Text>
   </Box>
   {/* Item 3 */}
@@ -462,9 +467,12 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
   <Box w="100%" maxW="6xl"  borderRadius="xl" p={8}>
     {/* Judul */}
     <Box textAlign="center" mb={8}>
-      <Text fontSize="2xl" fontWeight="bold" color="teal.600">
+    <Text fontSize="4xl" fontWeight="bold" color="teal.600">
+    Contact Details
+        </Text>
+      {/* <Text fontSize="2xl" fontWeight="bold" color="teal.600">
         Contact Details
-      </Text>
+      </Text> */}
       <Text fontSize="sm" color="gray.500">
         Menerima Pembuatan Aplikasi Mobile, Software dan Website. Anda Bisa Menghubungi saya melalui From dibawa ini.
       </Text>
