@@ -1,4 +1,4 @@
-import { IconButton, Box, Flex, Image, Text, Stack, Badge, HStack, Circle, VStack, SimpleGrid, Button, ButtonGroup, FormControl, FormLabel, Input, Textarea, useToast } from "@chakra-ui/react";
+import { IconButton, Wrap, WrapItem, Box, Flex, Image, Text, Stack, Badge, HStack, Circle, VStack, SimpleGrid, Button, ButtonGroup, FormControl, FormLabel, Input, Textarea, useToast } from "@chakra-ui/react";
 import DashboardLayout from "../components/DashboardLayout";
 import { FaInstagram,  FaLinkedin, FaTiktok, FaGithub } from "react-icons/fa"; 
 import { useEffect, useState } from "react";
@@ -98,7 +98,7 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
           alt="Baso Arfan Efendy"
           mb={{ base: 6, md: 0 }}
         />
-
+      
         {/* Text Section */}
         <Box textAlign={{ base: "center", md: "left" }} maxW="600px">
           <Text fontSize={{ base: "2xl", md: "4xl" }} fontWeight="bold" color="teal.600" mb={2}>
@@ -116,44 +116,96 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
           </Text>
 
           {/* Social Media Icons */}
-          <HStack spacing={4} justify={{ base: "center", md: "flex-start" }}>
-            <IconButton
-              as="a"
-              href="https://www.instagram.com/baso_arfan_efendy/"
-              aria-label="Instagram"
-              icon={<FaInstagram />}
-              colorScheme="gray"
-              variant="ghost"
-              size="lg"
-            />
-            <IconButton
-              as="a"
-              href="https://id.linkedin.com/in/baso-arfan-efendy-2570111b3"
-              aria-label="LinkedIn"
-              icon={<FaLinkedin />}
-              colorScheme="linkedin"
-              variant="ghost"
-              size="lg"
-            />
-            <IconButton
-              as="a"
-              href="https://github.com/appank"
-              aria-label="GitHub"
-              icon={<FaGithub />}
-              colorScheme="gray"
-              variant="ghost"
-              size="lg"
-            />
-            <IconButton
-              as="a"
-              href="https://www.tiktok.com/@laimonedev"
-              aria-label="TikTok"
-              icon={<FaTiktok />}
-              colorScheme="gray"
-              variant="ghost"
-              size="lg"
-            />
-          </HStack>
+          <Wrap spacing="16px" mt={4} justify={{ base: "center", md: "flex-start" }}>
+          <WrapItem>
+      <Button
+        leftIcon={<i class="ci ci-github"></i>}
+        p={5}
+        bg="white"
+        boxShadow="md"
+        borderRadius="xl"
+        color="gray.600"
+        border="1px solid #ccc"
+        onClick={() =>
+          window.open(
+            "https://github.com/appank"
+          )
+        }
+        _hover={{
+          boxShadow: "xl",
+          transform: "scale(1.03)",
+          transition: "0.3s",
+        }}
+      >
+        @appank
+      </Button>
+    </WrapItem>
+   
+    <WrapItem>
+      <Button
+        leftIcon={<i class="ci ci-tiktok"></i>}
+        p={5}
+        bg="white"
+        boxShadow="md"
+        borderRadius="xl"
+        color="gray.600"
+        border="1px solid #ccc"
+        onClick={() =>
+          window.open(
+            "https://www.tiktok.com/@laimonedev"
+          )
+        }
+        _hover={{
+          boxShadow: "xl",
+          transform: "scale(1.03)",
+          transition: "0.3s",
+        }}
+      >
+        @laimonedev
+      </Button>
+    </WrapItem>
+    <WrapItem>
+      <Button
+        leftIcon={<i className="ci ci-instagram" />}
+        p={5}
+        bg="white"
+        boxShadow="md"
+        borderRadius="xl"
+        color="gray.600"
+        border="1px solid #ccc"
+        onClick={() =>
+          window.open("https://www.instagram.com/baso_arfan_efendy")
+        }
+        _hover={{
+          boxShadow: "xl",
+          transform: "scale(1.03)",
+          transition: "0.3s",
+        }}
+      >
+        @baso_arfan_efendy
+      </Button>
+    </WrapItem>
+
+    <WrapItem>
+      <Button
+        leftIcon={<i class="ci ci-linkedin"></i>}
+        p={5}
+        bg="white"
+        boxShadow="md"
+        borderRadius="xl"
+        color="gray.600"
+        border="1px solid #ccc"
+        onClick={() => window.open("https://id.linkedin.com/in/baso-arfan-efendy-2570111b3")}
+        _hover={{
+          boxShadow: "xl",
+          transform: "scale(1.03)",
+          transition: "0.3s",
+        }}
+      >
+        @baso_arfan_efendy
+      </Button>
+    </WrapItem>
+  </Wrap>
         </Box>
       </Flex>
     </Box>
@@ -203,7 +255,7 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
         <Box position="absolute" top={0} left={{ base: "12px", md: "20px" }} width="2px" height="100%" bg="teal.500" zIndex={0} />
         <VStack spacing={8} align="start" position="relative" zIndex={1}>
           <Flex align="center" position="relative" pl={{ base: 6, md: 8 }}>
-            <Circle size={{ base: "12px", md: "16px" }} bg="teal.500" position="absolute" left={{ base: "-18px", md: "-28px" }} />
+           
             <Box pl={4}>
               <Text fontWeight="bold" fontSize={{ base: "md", md: "lg" }} color="teal.600">2021 - Universitas Dipa Makassar</Text>
               <Text fontSize="sm" color="gray.600">Teknik Informatika</Text>
@@ -221,7 +273,7 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
         <Box position="absolute" top={0} left={{ base: "12px", md: "20px" }} width="2px" height="100%" bg="teal.500" zIndex={0} />
         <VStack spacing={8} align="start" position="relative" zIndex={1}>
           <Flex align="center" position="relative" pl={{ base: 6, md: 8 }}>
-            <Circle size={{ base: "12px", md: "16px" }} bg="teal.500" position="absolute" left={{ base: "-18px", md: "-28px" }} />
+           
             <Box pl={4}>
               <Text fontWeight="bold" fontSize={{ base: "md", md: "lg" }} color="teal.600">2021-2024 - Google Play Console</Text>
               <Text fontSize="sm" color="gray.600">Android Developer - Freelance</Text>
@@ -229,7 +281,6 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
           </Flex>
 
           <Flex align="center" position="relative" pl={{ base: 6, md: 8 }}>
-            <Circle size={{ base: "12px", md: "16px" }} bg="teal.500" position="absolute" left={{ base: "-18px", md: "-28px" }} />
             <Box pl={4}>
               <Text fontWeight="bold" fontSize={{ base: "md", md: "lg" }} color="teal.600">2020 - Dinas Kependudukan dan Pencatatan Sipil Kota Makassar</Text>
               <Text fontSize="sm" color="gray.600">Kuliah Kerja Lapangan Plus - Internship</Text>
@@ -297,12 +348,12 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
     </Box>
     {/* Item 8 */}
     <Box textAlign="center">
-      <Image src="https://raw.githubusercontent.com/dheereshagrwal/coloured-icons/ef59ea8e2bba5848a8f471f94b24f55289c86476/public/logos/technology/mongodb/mongodb2.svg" alt="MongiDB" boxSize="80px" mx="auto" />
-      <Text mt={4} fontWeight="bold" color="gray.600">MongoDB</Text>
+      <Image src="https://raw.githubusercontent.com/dheereshagrwal/coloured-icons/bc82276a7ea47630ae52edd6137e58da18cfedce/public/logos/technology/supabase/supabase.svg" alt="MongiDB" boxSize="80px" mx="auto" />
+      <Text mt={4} fontWeight="bold" color="gray.600">Supabase</Text>
     </Box>
   </SimpleGrid>
   <Box height="40px" />
-  <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+  <SimpleGrid columns={{ base: 1, md: 4 }} spacing={5}>
     {/* Item 1 */}
   <Box
     textAlign="left"
@@ -373,6 +424,28 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
       Membuat CRUD Sebagai Database atau Authentikasi Menggunakan Express.js
     </Text>
   </Box>
+  <Box
+    textAlign="left"
+    p={6}
+    bg="white"
+    boxShadow="md"
+    borderRadius="xl"
+    _hover={{ boxShadow: "xl", transform: "scale(1.03)", transition: "0.3s" }}
+  >
+    <Image
+      src="https://raw.githubusercontent.com/dheereshagrwal/coloured-icons/bc82276a7ea47630ae52edd6137e58da18cfedce/public/logos/technology/supabase/supabase.svg"
+      alt="React"
+      boxSize="80px"
+      mx="inherit"
+      mb={4}
+    />
+    <Text fontSize="xl" fontWeight="bold" color="teal.600">
+      Mysql
+    </Text>
+    <Text mt={2} fontSize="sm" color="gray.500">
+      Membuat Supabase Sebagai Authentikasi User
+    </Text>
+  </Box>
 
   </SimpleGrid>
 </Box>
@@ -408,10 +481,6 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
         {item.title}
       </Text>
 
-      {/* Label */}
-      {/* <Text fontSize="sm" fontWeight="semibold" color="purple.500" mt={1}>
-        {item.labels.join(", ")}
-      </Text> */}
    <HStack spacing={3} justify={{ base: "left", md: "flex-start" }} mb={6}>
   {item.labels.map((label, index) => (
     <Badge key={index} colorScheme={colorSchemes[index % colorSchemes.length]}>
