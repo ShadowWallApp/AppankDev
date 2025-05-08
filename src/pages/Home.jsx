@@ -440,7 +440,7 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
       mb={4}
     />
     <Text fontSize="xl" fontWeight="bold" color="teal.600">
-      Mysql
+    Supabase
     </Text>
     <Text mt={2} fontSize="sm" color="gray.500">
       Membuat Supabase Sebagai Authentikasi User
