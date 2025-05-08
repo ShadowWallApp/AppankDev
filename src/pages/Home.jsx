@@ -257,7 +257,7 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
           <Flex align="center" position="relative" pl={{ base: 6, md: 8 }}>
            
             <Box pl={4}>
-              <Text fontWeight="bold" fontSize={{ base: "md", md: "lg" }} color="teal.600">2021 - Universitas Dipa Makassar</Text>
+              <Text fontWeight="bold" fontSize={{ base: "md", md: "lg" }} color="teal.600">2017 s/d 2021 - Universitas Dipa Makassar</Text>
               <Text fontSize="sm" color="gray.600">Teknik Informatika</Text>
             </Box>
           </Flex>
@@ -275,7 +275,7 @@ const colorSchemes = ["teal", "blue", "green", "purple", "orange", "pink", "red"
           <Flex align="center" position="relative" pl={{ base: 6, md: 8 }}>
            
             <Box pl={4}>
-              <Text fontWeight="bold" fontSize={{ base: "md", md: "lg" }} color="teal.600">2021-2024 - Google Play Console</Text>
+              <Text fontWeight="bold" fontSize={{ base: "md", md: "lg" }} color="teal.600">2021 s/d 2024 - Google Play Console</Text>
               <Text fontSize="sm" color="gray.600">Android Developer - Freelance</Text>
             </Box>
           </Flex>
